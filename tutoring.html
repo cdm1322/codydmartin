@@ -4,146 +4,126 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
+    <meta charset="utf-8" />
+    <title>The Cody Martin Blog</title>
+
+    <!-- Latest compiled and minified JQuery 3-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 </head>
-<body>
-    <!DOCTYPE html>
-
-    <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta charset="utf-8" />
-        <title>The Cody Martin Blog</title>
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <script>
-
-            var $form = $('form#test-form'),
-                url = 'https://script.google.com/macros/s/AKfycbzLChRjwEYL691TGoV8a8YoLHnccFlBW6VUQXM2BiLi18N2Ql7x/exec'
-
-            $('#submit-form').on('click', function (e) {
-                e.preventDefault();
-                var jqxhr = $.ajax({
-                    url: url,
-                    method: "GET",
-                    dataType: "json",
-                    data: $form.serializeObject()
-                }).success(
-                    // do something
-                );
-            })
-
-        </script>
-    </head>
     <body>
         <br /><br /><br />
-        <div class="container">
-            <div class="jumbotron">
-                <h1>Not Yet</h1>
-                <p>Site is under construction. Please check back later. ^_^</p>
-            </div>
-            <nav class="navbar navbar-default">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="index.html">Home</a>
+                    <div class="container">
+                        <div class="jumbotron">
+                            <h1>Not Yet</h1>
+                            <p>Site is under construction. Please check back later. ^_^</p>
+                        </div>
+                        <nav class="navbar navbar-default">
+                            <div class="container-fluid">
+                                <div class="navbar-header">
+                                    <a class="navbar-brand" href="index.html">Home</a>
+                                </div>
+                                <ul class="nav navbar-nav">
+                                    <li><a href="papers.html">Papers</a></li>
+                                    <li class="active"><a href="#">Tutoring</a></li>
+                                    <li><a href="interesting.html">Interesting Things</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <p>
+                            Need help? I'm here for you. I offer tutoring services for students <b>(of all types)</b> at the University of South Alabama.
+                        </p>
+                        <p>
+                            If you feel that paying for tutoring isn't an option for you, there are free services on campus including JagPals, The ACM, Mathematics Departmental Tutors, and Physics Departmental Tutors.
+                        </p>
+                        <p>
+                            If you don't mind paying for personalized help that fits your schedule, I'm more than happy to help you with any of the following courses:
+                        </p>
+                        <br /><br>
+                        <div class="col-sm-6">
+                            <b>Mathematics:</b>
+                            <ul>
+                                <li>Discrete Mathematics</li>
+                                <li>Calculus I - III</li>
+                                <li>Linear Algebra I</li>
+                                <li>Foundations of Mathematics</li>
+                                <li>Precalculus Trigonometry/Algebra</li>
+                                <li>Statistics and its Applications</li>
+                                <li>Applied Regression Analysis</li>
+                                <li>History of Mathematics</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <b>Computer Science | Information Technology | Information Systems:</b>
+                            <ul>
+                                <li>Introductory Java Programming</li>
+                                <li>Data Structures</li>
+                                <li>Advanced Data Structures</li>
+                                <li>Program Language Theory</li>
+                                <li>Software Engineering</li>
+                                <li>Secure Software Engineering</li>
+                                <li>Networking</li>
+                                <li>Digital Logic</li>
+                                <li>Automata Theory</li>
+                                <li>Hardware Security</li>
+                                <li>Surreptitious Software</li>
+                                <li>MVC Architecture - ASP.NET</li>
+                                <li>Basic SQL Database</li>
+                            </ul>
+                            <br /><br /><br />
+                        </div>
+                        <p>If you need help in a class that isn't listed here, go ahead and fill out the form below anyway but include what course you are taking.</p>
+                        <form class="form-horizontal" id="test-form">
+                            <div class="form-group">
+                                <label class="control-label">First and Last Name</label>
+                                <input class="form-control" type="text" name="name" placeholder="name" />
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label">E-Mail</label>
+                                <input class="form-control" type="text" name="email" placeholder="email" />
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label">Course Title</label>
+                                <input class="form-control" type="text" name="course name" placeholder="course name" />
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label">Course Number</label>
+                                <input class="form-control" type="text" name="course number" placeholder="course-#" />
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label">Course Textbook</label>
+                                <input class="form-control" type="text" name="book for course" placeholder="textbook, ISBN or title is fine" />
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">How stressed are you?</label>
+                                <input class="form-control" type="text" name="stressed" placeholder="here to help" />
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">What times are you available?</label>
+                                <input class="form-control" type="text" name="available" placeholder="what works for you?" />
+                            </div>
+                            <div>
+                                <center>
+                                    <button class="btn btn-default" type="submit" id="submit-form">Submit</button>
+                                </center>
+                            </div>
+                        </form>
+                    <script src="google-sheet.js"></script>
                     </div>
-                    <ul class="nav navbar-nav">
-                        <li><a href="papers.html">Papers</a></li>
-                        <li class="active"><a href="#">Tutoring</a></li>
-                        <li><a href="interesting.html">Interesting Things</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <p>
-                Need help? I'm here for you. I offer tutoring services for students <b>(of all types)</b> at the University of South Alabama.
-            </p>
-            <p>
-                If you feel that paying for tutoring isn't an option for you, there are free services on campus including JagPals, The ACM, Mathematics Departmental Tutors, and Physics Departmental Tutors.
-            </p>
-            <p>
-                If you don't mind paying for personalized help that fits your schedule, I'm more than happy to help you with any of the following courses:
-            </p>
-            <br /><br>
-            <div class="col-sm-6">
-                <b>Mathematics:</b>
-                <ul>
-                    <li>Discrete Mathematics</li>
-                    <li>Calculus I - III</li>
-                    <li>Linear Algebra I</li>
-                    <li>Foundations of Mathematics</li>
-                    <li>Precalculus Trigonometry/Algebra</li>
-                    <li>Statistics and its Applications</li>
-                    <li>Applied Regression Analysis</li>
-                    <li>History of Mathematics</li>
-                </ul>
-            </div>
-            <div class="col-sm-6">
-                <b>Computer Science | Information Technology | Information Systems:</b>
-                <ul>
-                    <li>Introductory Java Programming</li>
-                    <li>Data Structures</li>
-                    <li>Advanced Data Structures</li>
-                    <li>Program Language Theory</li>
-                    <li>Software Engineering</li>
-                    <li>Secure Software Engineering</li>
-                    <li>Networking</li>
-                    <li>Digital Logic</li>
-                    <li>Automata Theory</li>
-                    <li>Hardware Security</li>
-                    <li>Surreptitious Software</li>
-                    <li>MVC Architecture - ASP.NET</li>
-                    <li>Basic SQL Database</li>
-                </ul>
-                <br /><br /><br />
-            </div>
-            <p>If you need help in a class that isn't listed here, go ahead and fill out the form below anyway but include what course you are taking.</p>
-            <form class="form-horizontal" id="test-form">
-                <div class="form-group">
-                    <label class="control-label">First and Last Name</label>
-                    <input class="form-control" type="text" name="name" placeholder="name" />
-                </div>
-
-                <div class="form-group">
-                    <label class="control-label">E-Mail</label>
-                    <input class="form-control" type="text" name="email" placeholder="email" />
-                </div>
-
-                <div class="form-group">
-                    <label class="control-label">Course Title</label>
-                    <input class="form-control" type="text" name="course name" placeholder="course name" />
-                </div>
-
-                <div class="form-group">
-                    <label class="control-label">Course Number</label>
-                    <input class="form-control" type="text" name="course number" placeholder="course-#" />
-                </div>
-
-                <div class="form-group">
-                    <label class="control-label">Course Textbook</label>
-                    <input class="form-control" type="text" name="book for course" placeholder="textbook, ISBN or title is fine" />
-                </div>
-                <div class="form-group">
-                    <label class="control-label">How stressed are you?</label>
-                    <input class="form-control" type="text" name="stressed" placeholder="here to help" />
-                </div>
-                <div class="form-group">
-                    <label class="control-label">What times are you available?</label>
-                    <input class="form-control" type="text" name="available" placeholder="what works for you?" />
-                </div>
-                <div>
-                    <center>
-                        <button class="btn btn-default" type="submit" id="submit-form">Submit</button>
-                    </center>
-                </div>
-            </form>
-        </div>
         <br /><br /><br />
     </body>
-</html>
-</body>
 </html>
