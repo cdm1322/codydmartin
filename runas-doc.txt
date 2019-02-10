@@ -1,0 +1,10 @@
+How to chain commands using runas and read from files in windows (XP):
+
+Requires the admin credentials to have been saved by the user at some point.
+
+runas /user:admin /savecred "cmd /c type \"C:\Users\admin\folder\doc.txt\" > \"C:\Users\unpriveleged\folder\output.txt\""
+
+alter folders to your own needs.
+
+Use responsibly.
+
