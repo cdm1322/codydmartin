@@ -1,4 +1,5 @@
 # cdm1322.github.io
-This website is purposed for the disbursement of my works as well as a hub for offering students tutoring in Mathematics and Computer Science related courses.
 
-If you have any issues or questions please email me at CodyDMartin91@gmail.com
+Repository containing my website files. Website contains helpful links to security vulnerabilities, exploits and other related information. Also, there are a few places where I practice pentesting and my handles there can be found here. Lastly, I've included some research work I have been a part of. Enjoy the video.
+
+:P
